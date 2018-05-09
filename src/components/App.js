@@ -73,7 +73,6 @@ class App extends Component {
     if (this.deferredPrompt) {
       this.deferredPrompt.prompt();
       this.deferredPrompt.userChoice.then(choice => {
-        console.log(choice);
         this.deferredPrompt = null;
       });
     }
@@ -114,7 +113,7 @@ class App extends Component {
           }
         />
         <Route 
-          path="users/:id"
+          path="/users/:id"
           render={({ history, match }) => (
             <UserContainer
               messages={this.state.messages}

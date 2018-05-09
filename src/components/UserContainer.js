@@ -17,6 +17,7 @@ export default class UserContainer extends Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <div id="UserContainer" className="inner-container">
         <Header>
